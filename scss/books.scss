@@ -1,0 +1,185 @@
+@import "variables";
+
+.book-container__books {
+  width: 45vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "a a" "b b" "c c";
+
+  .book-container__books_wrap {
+    width: 424px;
+    height: 300px;
+    display: flex;
+    margin: 30px;
+
+    .books_wrap-info {
+      margin-left: 36px;
+    }
+
+    .books_wrap-image,
+    .books_wrap-image_error {
+      width: 212px;
+      height: 327px;
+    }
+
+    .books_wrap-info_description_error {
+      display: none;
+    }
+
+    .books_wrap-info_sale,
+    .books_wrap-info_sale_error {
+      color: $text-black;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .books_wrap-info_sale_error {
+      display: none;
+    }
+
+    .books_wrap-info_author {
+      color: $text-gray;
+      font-family: Open Sans;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .books_wrap-info_title {
+      color: $text-black;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .books_wrap-info_description {
+      color: $text-gray;
+      font-family: Open Sans;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+      width: 176px;
+      height: 45px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .button_buy-now {
+      color: $text-violet;
+      font-family: Montserrat;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      width: 176px;
+      height: 45px;
+      border: 1px solid $text-violet;
+    }
+
+    .books_wrap-rating {
+      color: $text-gray;
+      font-family: Open Sans;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 16px;
+      margin-right: 6px;
+    }
+    .books_wrap-rating_error {
+      display: none;
+    }
+    .books_wrap-rating_block {
+      display: flex;
+
+      .books_wrap-rating_block_error {
+        display: none;
+      }
+
+      .rating_block_stars__yellow,
+      .rating_block_stars__grey {
+        height: 12px;
+        width: 12px;
+      }
+
+      .rating_block_stars__yellow {
+        background-image: url(../img/Star.png);
+      }
+
+      .rating_block_stars__grey {
+        background-image: url(../img/Star_null.png);
+      }
+    }
+
+    .none {
+      display: none;
+    }
+
+    .rating_block_stars__one,
+    .rating_block_stars__two,
+    .rating_block_stars__three,
+    .rating_block_stars__four,
+    .rating_block_stars__five {
+      display: flex;
+    }
+  }
+}
+
+.fotter-container {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button__load-more {
+    border: 1px solid $text-violet;
+    width: 176px;
+    height: 45px;
+    color: #4c3db2;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+    margin-top: 75px;
+  }
+
+  .button_in-the-cart {
+    width: 176px;
+    height: 45px;
+    flex-shrink: 0;
+    border: 1px solid #eeedf5;
+    color: #5c6a79;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}

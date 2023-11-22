@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../output/main.css" />
+    <title>Bookshop</title>
+  </head>
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="header-container__logo">Bookshop</a>
+
+      <nav class="header-container__navigation">
+        <ul class="navigation-list">
+            <li class="navigation-list__item">
+                <a href="#" class="navigation-list__link link">books</a>
+              </li>
+  
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__link">audiobooks</a>
+              </li>
+  
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__link">Stationery & gifts</a>
+              </li>
+  
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__link">blog</a>
+              </li>
+        </ul>
+      </nav>
+
+      <div class="button-container">
+        <button class="button-container__button"></button>
+        <button class="button-container__button"></button>
+        <button class="button-container__button">
+            <div class="button-container__button-quantity">0</div>
+        </button>
+      </div>
+  </header>
+  <body class="body">
+    <div class="body-container">
+        <section class="body-container__slider-container">
+            <div class="slider-container__img">
+                <div class="slider-container__img-slide"><img src="../img/bg.png" alt="Баннер"></div>
+                <div class="slider-container__img-slide"><img src="../img/bg1.png" alt="Баннер"></div>
+                <div class="slider-container__img-slide"><img src="../img/bg2.png" alt="Баннер"></div>
+                
+            </div>
+            <div class="slider-container__dots"></div>
+            <a href="#"><button class="body-container__promo1"></button></a>
+            <a href="#"><button class="body-container__promo2"></button></a>
+        </section>
+    </div>
+    <section class="body-container__book-container">
+        <div class="book-container__category">
+            <ul class="category__list">
+                <li class="category__item active"><span>Architecture</span></li>
+                <li class="category__item"><span>Art & Fashion</span></li>
+                <li class="category__item"><span>Biography</span></li>
+                <li class="category__item"><span>Business</span></li>
+                <li class="category__item"><span>Crafts & Hobbies</span></li>
+                <li class="category__item"><span>Fiction</span></li>
+                <li class="category__item"><span>Food & Drink</span></li>
+                <li class="category__item"><span>Health & Wellbeing</span></li>
+                <li class="category__item"><span>History & Politics</span></li>
+                <li class="category__item"><span>Humor</span></li>
+                <li class="category__item"><span>Poetry</span></li>
+                <li class="category__item"><span>Psychology</span></li>
+                <li class="category__item"><span>Science</span></li>
+                <li class="category__item"><span>Technology</span></li>
+                <li class="category__item"><span>Travel & Maps</span></li>
+            </ul>
+        </div>
+        <div class="book-container__books"></div>
+    </section>
+    
+  </body>
+  <footer class="fotter-container"><button class="button__load-more" type="button">Load more</button></footer>
+  <script src="../output/main.js"></script>
+</html>

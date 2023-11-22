@@ -1,0 +1,131 @@
+@import "variables";
+.header {
+  margin: 0 auto;
+  width: 1440px;
+
+  &-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1119px;
+    height: 116px;
+
+    &__logo {
+      color: $text-black;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration: none;
+    }
+
+    &__navigation {
+      display: flex;
+
+      .navigation-list {
+        display: flex;
+
+        .navigation-list__item {
+          list-style-type: none;
+          margin: 0 20px;
+
+          .navigation-list__link {
+            text-decoration: none;
+            color: $text-gray;
+            font-family: Montserrat;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+          .homing {
+            color: $text-black;
+            font-family: Montserrat;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+          .link {
+            color: $text-black;
+            font-family: Montserrat;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .button-container {
+      display: flex;
+
+      .button-container__button:nth-child(1),
+      .button-container__button:nth-child(2),
+      .button-container__button:nth-child(3) {
+        width: 17px;
+        height: 17px;
+        border: 0;
+        margin: 0 20px;
+      }
+
+      .button-container__button:nth-child(1) {
+        background-image: url(../img/user.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: $text-white;
+      }
+
+      .button-container__button:nth-child(2) {
+        background-image: url(../img/search.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: $text-white;
+      }
+
+      .button-container__button:nth-child(3) {
+        background-image: url(../img/shop\ bag.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: $text-white;
+      }
+
+      .button-container__button-quantity {
+        color: $text-white;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        position: relative;
+        top: 6px;
+        background-color: #ff353a;
+      }
+    }
+  }
+
+  .container {
+    width: 100vw;
+    height: 18000px;
+    background-color: red;
+  }
+}
+.sticky {
+  position: fixed;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: all 0.3s;
+}

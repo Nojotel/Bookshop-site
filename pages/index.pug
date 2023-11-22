@@ -1,0 +1,79 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Open+Sans&family=Roboto&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../output/main.css')
+    title Bookshop
+  body.body
+    header.header
+      .header-container
+        a.header-container__logo(href='#') Bookshop
+        nav.header-container__navigation
+          ul.navigation-list
+            li.navigation-list__item
+              a.navigation-list__link.link(href='#') books
+            li.navigation-list__item
+              a.navigation-list__link(href='#') audiobooks
+            li.navigation-list__item
+              a.navigation-list__link(href='#') Stationery & gifts
+            li.navigation-list__item
+              a.navigation-list__link(href='#') blog
+        .button-container
+          button.button-container__button
+          button.button-container__button
+          button.button-container__button
+            .button-container__button-quantity 0
+    .body-container
+      section.body-container__slider-container
+        .slider-container__img
+          .slider-container__img-slide
+            img(src='../img/bg.png' alt='Баннер')
+          .slider-container__img-slide
+            img(src='../img/bg1.png' alt='Баннер')
+          .slider-container__img-slide
+            img(src='../img/bg2.png' alt='Баннер')
+        .slider-container__dots
+        a(href='#')
+          button.body-container__promo1
+        a(href='#')
+          button.body-container__promo2
+    section.body-container__book-container
+      .book-container__category
+        ul.category__list
+          li.category__item.active
+            span Architecture
+          li.category__item
+            span Art & Fashion
+          li.category__item
+            span Biography
+          li.category__item
+            span Business
+          li.category__item
+            span Crafts & Hobbies
+          li.category__item
+            span Fiction
+          li.category__item
+            span Food & Drink
+          li.category__item
+            span Health & Wellbeing
+          li.category__item
+            span History & Politics
+          li.category__item
+            span Humor
+          li.category__item
+            span Poetry
+          li.category__item
+            span Psychology
+          li.category__item
+            span Science
+          li.category__item
+            span Technology
+          li.category__item
+            span Travel & Maps
+      .book-container__books
+    footer.fotter-container
+      button.button__load-more(type='button') Load more

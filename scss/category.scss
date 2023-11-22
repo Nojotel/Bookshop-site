@@ -1,0 +1,45 @@
+@import "variables";
+
+.body-container__book-container {
+  display: flex;
+
+  .book-container__category {
+    background-color: $dots-color;
+    width: 416px;
+    height: 710px;
+    padding-top: 20px;
+
+    .category__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .category__item {
+        color: $text-gray;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        margin: 12px 0;
+      }
+
+      .active {
+        color: $text-black;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        list-style: disc;
+
+        &::marker {
+          color: #756ad3;
+        }
+      }
+    }
+  }
+}
