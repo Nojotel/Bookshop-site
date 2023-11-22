@@ -208,25 +208,3 @@ function updateButtonStatus() {
 function updateCartQuantityDisplay() {
   document.querySelector(".button-container__button-quantity").innerText = cartBook.length;
 }
-
-function saveBooks(ev) {
-  if (!ev.target.dataset.btnbuy) {
-    return;
-  }
-  const bookId = ev.target.dataset.btnbuy;
-
-  if (!cartBook.some((item) => item.id === bookId)) {
-    for (let i = 0; i < allBooks.length; i++) {
-      let resultForadd = allBooks[i];
-      resultForadd.forEach((item) => {
-        id = item.id;
-        if (id === bookId) {
-          let found = resultForadd.find((element) => element.id === id);
-          cartBook.push(found);
-          localStorage.setItem("bagBook", JSON.stringify(cartBook));
-          updateCartQuantityDisplay();
-        }
-      });
-    }
-  }
-}
